@@ -7,12 +7,10 @@ LABEL com.github.containers.toolbox="true" \
 
 COPY extra-packages /
 RUN pacman -Syu --noconfirm && \
-    pacman -S git base base-devel pipewire-jack --noconfirm && \
-    pacman -Rs mlocate --noconfirm && \
-    cd /tmp && \
-    git clone https://aur.archlinux.org/yay-bin.git && \
-    cd yay-bin && \
-    chmod -R 777 ../yay-bin && \
+    pacman -S git base base-devel pipewire-jack go curl wget --noconfirm && \
+    pacman -Rs mlocate --noconfirm
+RUN cd /tmp && \
+    curl 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=yay-bin' -o PKGBUILD && \
     runuser -unobody makepkg && \
     pacman -U --noconfirm *.zst
 RUN cd / && \
