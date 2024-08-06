@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/dpendolino/boxkit/compare/v1.0.0...v1.0.1) (2024-07-02)
+
+
+### Bug Fixes
+
+* Update example toolboxes link in README.md ([#71](https://github.com/dpendolino/boxkit/issues/71)) ([11e0e81](https://github.com/dpendolino/boxkit/commit/11e0e81e3357638fa675dc6bbf06ab5443076c24))
+
 ## 1.0.0 (2024-03-04)
 
 
