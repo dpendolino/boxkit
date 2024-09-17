@@ -7,8 +7,7 @@ LABEL com.github.containers.toolbox="true" \
 
 COPY extra-packages /
 RUN pacman -Syu --noconfirm && \
-    pacman -S git base base-devel pipewire-jack go curl wget fish starship --noconfirm && \
-    pacman -Rs mlocate --noconfirm
+    pacman -S git base base-devel pipewire-jack go curl wget fish starship --noconfirm
 RUN cd /tmp && \
     curl 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=yay-bin' -o PKGBUILD && \
     runuser -unobody makepkg && \
