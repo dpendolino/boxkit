@@ -5,9 +5,9 @@ LABEL com.github.containers.toolbox="true" \
       summary="A cloud-native terminal experience" \
       maintainer="dpendolino@gmail.com"
 
-COPY scripts/alpine.sh /
+COPY scripts/boxkit-alpine.sh /
 COPY scripts/distrobox-shims.sh /
-COPY packages/alpine.packages /
+COPY packages/boxkit-alpine.packages /
 
-RUN chmod +x /alpine.sh /distrobox-shims.sh && /alpine.sh
-RUN rm /alpine.sh /distrobox-shims.sh /alpine.packages
+RUN chmod +x /boxkit-alpine.sh /distrobox-shims.sh && /boxkit-alpine.sh
+RUN rm /boxkit-alpine.sh /distrobox-shims.sh /boxkit-alpine.packages
