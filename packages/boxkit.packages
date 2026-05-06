@@ -1,7 +1,11 @@
 age
+atuin
 btop
 bat
 chezmoi
+clipboard
+cosign
+dbus-x11
 direnv
 eza
 ffmpeg
@@ -16,11 +20,11 @@ ncurses
 neofetch
 neovim
 npm
+plocate
 python3
 ripgrep
+speedtest-cli
 starship
 wl-clipboard
 zellij
 zstd
-fasd
-thefuck

@@ -1,0 +1,13 @@
+FROM quay.io/toolbx/arch-toolbox:latest
+
+LABEL com.github.containers.toolbox="true" \
+      usage="This image is meant to be used with the toolbox or distrobox command" \
+      summary="A cloud-native terminal experience" \
+      maintainer="dpendolino@gmail.com"
+
+COPY scripts/boxkit.sh /
+COPY scripts/distrobox-shims.sh /
+COPY packages/boxkit.packages /
+
+RUN chmod +x /boxkit.sh /distrobox-shims.sh && /boxkit.sh
+RUN rm /boxkit.sh /distrobox-shims.sh /boxkit.packages
