@@ -33,7 +33,6 @@
 * fix typo ([8addf9e](https://github.com/dpendolino/boxkit/commit/8addf9e4499a83b2b9b591e9808470f3e3f6a46e))
 * update dependabot ([#19](https://github.com/dpendolino/boxkit/issues/19)) ([0c388c9](https://github.com/dpendolino/boxkit/commit/0c388c958985cdc7d3c2d3de5d6d58de09472edf))
 * update maintainer field ([#37](https://github.com/dpendolino/boxkit/issues/37)) ([e94a8a6](https://github.com/dpendolino/boxkit/commit/e94a8a69c34f5692514ebcc8c3ac21e2f33aa947))
-
 ## [1.1.0](https://github.com/ublue-os/boxkit/compare/v1.0.0...v1.1.0) (2023-10-09)
 
 
